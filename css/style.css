@@ -1,0 +1,202 @@
+#wrapper-img {
+	text-align: center;
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-color: #fff;
+	display: block;
+	width: 100%;
+	min-width: 1200px;
+}
+
+.no-img {
+	font-size: 20px;
+	color: #999999;
+	font-weight: 700;
+	margin: 0 0 30px;
+}
+
+.small-text-block {
+	display: block;
+	font-weight: 400;
+	font-size: 14px;
+	padding: 10px;
+	word-wrap: break-word;
+}
+
+/**
+ * Поле вводу назви картинки
+ */
+.call-img-form {
+    width: 100%;
+    text-align: center;
+}
+
+.call-img-form__button {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background-color: #00a4e4;
+    color: #fff;
+    border-radius: 4px;
+    margin: 0 5px;
+    padding: 10px 15px;
+}
+.call-img-form__button:hover {
+    text-decoration: underline;
+}
+.call-img-form__button:active {
+    background-color: #039eda;
+}
+
+.call-img-form__input {
+    padding: 10px;
+    margin: 30px auto 15px;
+    border-radius: 4px;
+    background-color: #fff;
+    outline: none;
+    border:  1px solid #ddd;
+    min-width: 260px;
+    color: #333;
+}
+
+.call-img-form__input::-webkit-input-placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+.call-img-form__input::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+.call-img-form__input:-ms-input-placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+.call-img-form__input::placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+
+/**
+ * Стилі навігації
+ */
+.buttons {
+    position: fixed;
+    display: none;
+    top: 30px; 
+    left: 0; 
+    background-color: #FBFBFB;
+	border-radius: 0 4px 4px 0;
+    border: 1px solid #ddd;
+    z-index: 2;
+    opacity: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.buttons:hover {opacity: 1;}
+
+.buttons .button {
+    padding: 10px 13px;
+	margin: 0;
+	display: block;
+	color: #333;
+	text-decoration: none;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+.buttons > .button:last-child {
+    border-bottom: none;
+}
+.buttons .button:hover {text-decoration: underline; }
+.buttons .button.active {text-decoration: underline; font-weight: 700;}
+.buttons .second-row a {padding-left: 30px;}
+
+
+
+/**
+ * Допоміжні стилі, які часто повторюються
+ */
+
+.hide { display: none; }
+.show { display: block; }
+
+.swing {
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    opacity: 1;
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+    30%
+    {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    50%
+    {
+        -webkit-transform: translateY(3px);
+        transform: translateY(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateY(-3px);
+        transform: translateY(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+@-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+    30%
+    {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    50%
+    {
+        -webkit-transform: translateY(3px);
+        transform: translateY(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateY(-3px);
+        transform: translateY(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
